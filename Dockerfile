@@ -2,6 +2,10 @@
 FROM dockerfile/ubuntu
 MAINTAINER Rohit Dantas <rohit.dantas+docker@gmail.com>
 
+RUN sudo apt-get -qq update
+RUN sudo apt-get -qq install git curl
+RUN curl https://raw.githubusercontent.com/TaylorMonacelli/ubuntu_taylor/master/setup.sh | sh -
+
 # Download latest package lists
 RUN apt-get update
 
