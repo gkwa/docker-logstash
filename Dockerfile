@@ -1,5 +1,5 @@
 # Pull base image.
-FROM dockerfile/ubuntu
+FROM ubuntu
 MAINTAINER Rohit Dantas <rohit.dantas+docker@gmail.com>
 
 RUN sudo apt-get -qq update
